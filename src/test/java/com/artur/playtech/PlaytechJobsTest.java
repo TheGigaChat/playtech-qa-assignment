@@ -30,14 +30,17 @@ public class PlaytechJobsTest extends BaseTest {
         Set<String> estoniaJobLinks = new LinkedHashSet<>();
 
         for (WebElement jobLink : jobLinks) {
-            String text = jobLink.getText().trim();
-
-            WebElement location = jobLink.findElement(By.xpath(".//p[@class='location-link']"));
+            String href = jobLink.getAttribute("href");
+            WebElement location = jobLink.findElement(By.cssSelector(".location-link"));
             String locationText = location.getText().trim();
 
             // Validation
+            if (href == null || href.isEmpty()) {
+                continue;
+            }
+
             if (locationText.equalsIgnoreCase("estonia")) {
-                estoniaJobLinks.add(text);
+                estoniaJobLinks.add(href);
             }
         }
 
