@@ -15,6 +15,7 @@
         <junit.version>5.10.2</junit.version>
         <selenium.version>4.29.0</selenium.version>
         <webdrivermanager.version>6.1.0</webdrivermanager.version>
+        <slf4j-simple.version>2.0.17</slf4j-simple.version>
     </properties>
 
     <dependencies>
@@ -34,6 +35,13 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
