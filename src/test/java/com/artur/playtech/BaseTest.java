@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+/**
+ * This abstract class opens a browser driver before each test and closes after each test.
+ */
 public abstract class BaseTest {
 
     protected WebDriver driver;
@@ -18,6 +21,7 @@ public abstract class BaseTest {
     void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        // Maximize the window to reveal all the visible elements.
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
