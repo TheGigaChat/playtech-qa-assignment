@@ -7,7 +7,7 @@ public class PlaytechResultFormatter {
     public static String format(PlaytechResult result) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Playtech QA Assignment Results\n");
+        sb.append("Playtech QA Assignment Results\n\n");
 
         sb.append("1. Teams\n");
         sb.append("Count: ").append(result.teamCount()).append("\n");

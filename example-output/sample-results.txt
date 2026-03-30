@@ -1,1 +1,23 @@
-Playtech QA assignment results
+Playtech QA Assignment Results
+
+1. Teams
+Count: 11
+- Information Technology
+- Product
+- QA
+- Marketing
+- Legal & Compliance
+- Safety & Security
+- Finance
+- Data
+- IT
+- Customer Support
+- Software
+
+2. Research Areas
+- risk analysis using data derived from the use of BetBuddy
+- investigating product related risks such as slot game volatility, use of autoplay and the effects of stake limits
+- encouraging the use of safer gambling tools
+
+3. Estonia Job Link (available from both Tallinn and Tartu)
+https://jobs.smartrecruiters.com/Playtech/744000110177476-senior-database-administrator

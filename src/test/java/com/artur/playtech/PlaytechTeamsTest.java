@@ -20,7 +20,7 @@ public class PlaytechTeamsTest extends BaseTest {
         // Wait until the team section is visible
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
-                        By.cssSelector(".teams-cards")
+                        By.cssSelector(".teams-cards .team-card h6 span")
                 )
         );
 
